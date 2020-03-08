@@ -1,4 +1,4 @@
-package Zad2;
+package structures.Zad2;
 
 import java.util.Comparator;
 

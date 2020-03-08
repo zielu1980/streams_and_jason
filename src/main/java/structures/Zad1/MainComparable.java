@@ -1,11 +1,9 @@
-package Zad1;
+package structures.Zad1;
 
 import java.util.*;
-
-public class Main {
+public class MainComparable {
     public static void main(String[] args) {
         List<Osoba> list = new ArrayList<>(Arrays.asList(
-
                 new Osoba("Marek", "Markowski", 27),
                 new Osoba("Michał", "Kowalski", 30),
                 new Osoba("Kamil", "Nowak", 12),
@@ -14,19 +12,8 @@ public class Main {
         ));
         list.forEach(System.out::println);
         System.out.println();
-        Collections.sort(list, new Comparator<Osoba>() {
-            @Override
-            public int compare(Osoba o1, Osoba o2) {
-                return Integer.compare(o1.getWiek(), o2.getWiek());
-            }
-        });
+        Collections.sort(list);
         list.forEach(System.out::println);
         System.out.println();
     }
 }
-
-
-
-
-
-
